@@ -1,0 +1,77 @@
+.NextPage-Flex{
+    /* width: 100%; */
+    /* padding-left: 130px; */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+.NextPageImage{
+    width: 35%;
+    height: 60vh;
+}
+.description{
+    /* width: 60%; */
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 5px;
+}
+.NextHeading{
+    font-size: 29px;
+    font-weight: bold;
+    color: blue;
+}
+.NextPrice{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+.spandes{
+    font-size: 23px;
+    color: rgb(51, 44, 44);
+}
+.addtocartBed{
+    width: 30%;
+}
+.AddButton{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+.imgoffer{
+    width: 90% ;
+    height:45vh;
+}
+
+@media screen and (min-width: 340px) and (max-width : 760px){
+    .NextPage-Flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .NextPageImage{
+        width: 400px;
+        height: 45vh;
+
+    }
+    .NextHeading{
+        text-align: justify;
+    }
+    .addtocartBed{
+        width: 50%;
+    }
+    .AddButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .imgoffer{
+        width: 100%;
+    }
+}

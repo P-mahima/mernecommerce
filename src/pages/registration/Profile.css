@@ -1,0 +1,57 @@
+.userprofile{
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 50px; */
+    /* justify-content: space-between; */
+    gap: 20px;
+    margin-right: 150px;
+}
+.buttonlogo{
+    width: 200px;
+    height: auto;
+    color: white;
+    /* background-color: darkblue; */
+    font-size: 29px;
+    text-align: center;
+    /* margin-left: 20px; */
+}
+.register{
+    width: 50%;
+    padding: 15px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(43, 205, 226);
+}
+.registerme{
+    width: 70%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(43, 205, 226);
+}
+.registerfirst{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+
+}
+.registerlog{
+    width: 70%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(43, 205, 226);
+}
+
+
+@media screen and (min-width:300px) and (max-width:760px){
+    .userprofile{
+        display: flex;
+        /* flex-direction: column; */
+        width: 100px;
+        /* justify-content: space-between; */
+        gap: 20px;
+        margin-right: 150px;
+    }
+}

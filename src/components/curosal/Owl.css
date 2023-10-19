@@ -1,0 +1,40 @@
+.imgcursole{
+    width: 90%;
+    height: 30vh;
+
+}
+.titlecursole{
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.maindiv{
+    /* width: 100%; */
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-grow: 1;
+    /* padding-left: 200px; */
+    gap: 40px;
+    /* border: 2px solid gray; */
+}
+.maintitlecursole{
+    width: 97%;
+    /* margin-left: 0px; */
+    /* display: flex; */
+    padding-left: 70px;
+}
+.pricecursole{
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+.headingnewly{
+    font-size: 40px;
+    font-weight: bold;
+    /* padding-left: 20px; */
+    /* border-bottom: 5px solid red ; */
+}

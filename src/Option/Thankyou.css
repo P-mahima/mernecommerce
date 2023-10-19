@@ -1,0 +1,27 @@
+.thankyouhead{
+    /* display: flex; */
+    font-size: 30px;
+    color:brown;
+    font-weight: bold;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+}
+.thankyouheadkeep{
+    width: 17vw;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 30px;
+    color:white;
+    background-color: blue;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    text-align: center;
+}
+.thankyou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
