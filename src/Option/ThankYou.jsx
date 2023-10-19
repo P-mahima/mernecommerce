@@ -8,7 +8,7 @@ const ThankYou = () => {
     <Layout>
       <div className='thankyou'>
       <h1 className='thankyouhead'>Thank you for shopping</h1>
-      <Link to={'/home'}>
+      <Link to={'/'}>
       <h3 className='thankyouheadkeep'>Keep Shoping</h3>
       </Link>
 
