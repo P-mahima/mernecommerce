@@ -9,6 +9,7 @@ import { Store } from '../../context/data/MyContext';
 import { deleteFromCart } from '../../redux/CartSlice';
 import { Link } from 'react-router-dom';
 import HomeFooter from '../../components/footer/Footer';
+import PayPalApis from './Payment';
 
 
 
@@ -109,11 +110,14 @@ function Cart() {
               </div>
             </div>
 
-            <Link to={'/thankyoushopping'}>
+            {/* <Link to={'/thankyoushopping'}>
                 <button className='buynow' type='button' onClick={handleOrder}>
                   Buy Now
                   </button>
-            </Link>
+            </Link> */}
+            <button>
+              <PayPalApis/>
+            </button>
           
 
           </div>
