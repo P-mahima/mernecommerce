@@ -10,7 +10,7 @@ const SearchForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try{
-            const {data} = await axios.get(`http://localhost:3005/route/searchfilter/${values.title}`)
+            const {data} = await axios.get(`https://ecommercedataback.onrender.com/route/searchfilter/${values.title}`)
             setValues({...values, results: data})
             navigate('/searchfilter')
         }

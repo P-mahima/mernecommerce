@@ -65,7 +65,7 @@ const MobileeCompo = () => {
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
                                 <h2 className='headingTwo'   style={{ color: mode === 'dark' ? 'white' : '', }}>{cat.title}</h2>
                                 </Link>
-                                <h3 className='price'>{cat.price}</h3>
+                                <h3 className='price'>₹ {cat.price}</h3>
                             </div>
                             <button onClick={() => addcart(cat)} className='addto'>Add to Cart</button>
                         </div>

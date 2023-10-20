@@ -22,10 +22,10 @@ root.render(
   }}
   >
     
+    <PayPalScriptProvider options={{"client-id": client, currency: "USD", intent: "capture"}}>
   
     
   <React.StrictMode>
-    <PayPalScriptProvider options={{"client-id": client, currency: "INR", intent: "capture"}}>
    
     <Provider store={Store}>
       <SearchProvider>
@@ -33,10 +33,10 @@ root.render(
     <App />
       </SearchProvider>
     </Provider>
-    </PayPalScriptProvider>
   
   
   </React.StrictMode>,
+    </PayPalScriptProvider>
     </Auth0Provider>
 )
 

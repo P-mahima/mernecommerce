@@ -57,7 +57,7 @@ export default function PayPalApis() {
     // Order is captured on the server and the response is returned to the browser
     try {
       const { data } = await axios.post(
-        `https://project-backend-ct05.onrender.com/products//api/orders/${data.orderID}/capture`,
+        `https://ecommercedataback.onrender.com/route/orders/${data.orderID}`,
         null,
         {
           // method: "POST",
