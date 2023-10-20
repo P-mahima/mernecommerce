@@ -1,4 +1,95 @@
+
+.imagemain{
+  display: flex;
+  flex-direction: column;
+}
+.loginimage{
+  width: 50vw;
+  height: 50vh;
+}
+
 .loginMain
+{
+    display: flex;
+    /* flex-direction: column; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* gap: 20px; */
+    /* border: 2px solid black; */
+    /* padding: 60px; */
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.loginform{
+  width: 50vw;
+  height: 50vh;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 2px 2px 2px green;
+}
+
+.tab{
+  font-size: 30px;
+}
+
+.inputBox{
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 20vw;
+  height: 25vh;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.labeltext{
+  /* font-size: 70px; */
+  font-weight: bold;
+}
+.loginregister{
+  background-color: pink;
+  /* width: 50%; */
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  /* text-align: left; */
+}
+.loginregist{
+  background-color: pink;
+  width: 50px;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.buttonflex{
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (min-width:300px) and (max-width:760px){
+  .loginform{
+    width: 90vw;
+    height: 50vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 2px 2px green;
+  }
+  .labeltext{
+    /* font-size: 70px; */
+    font-weight: lighter;
+  }
+  .loginMain
 {
     display: flex;
     flex-direction: column;
@@ -6,17 +97,69 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    gap: 20px;
-    border: 2px solid black;
-    padding: 60px;
+    /* gap: 20px; */
+    /* border: 2px solid black; */
+    /* padding: 60px; */
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: white;
 }
-
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-  height: 25px;
+  width: 80vw;
+  height: 25vh;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.loginregister{
+  background-color: pink;
+  /* width: 50%; */
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  /* text-align: left; */
+}
+.loginregist{
+  background-color: pink;
+  width: 50px;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.loginimage{
+  width: 40vw;
+  height: 40vh;
+}
+  
+}
+
+@media screen and (min-width:760px) and (max-width:1100px){
+  .loginform{
+    width: 80vw;
+    height: 45vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 2px 2px 2px green;
+  } 
+  input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 45vw;
+  height: 25vh;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.loginregister{
+  background-color: pink;
+  /* width: 50%; */
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  /* text-align: left; */
+}
+.loginregist{
+  font-size: 20px;
+}
+
 }

@@ -212,6 +212,9 @@
     width: 64%;
     display: inline-grid;
   }
+  .buynow{
+    background-color: blue;
+  }
 
   .addbtn{
     font-size: 20px;

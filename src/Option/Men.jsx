@@ -8,6 +8,7 @@ import { toast } from 'react-toastify'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { Store } from '../context/data/MyContext'
+import HomeFooter from '../components/footer/Footer'
 
 
 const MenCompo = () => {
@@ -29,14 +30,14 @@ const MenCompo = () => {
     const addCart = (product) => {
         dispatch(addToCart(product))
         toast.success('Product added successfully',{
-            position: "bottom-right",
+            position: "top-right",
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: "colored",
+            // theme: "colored",    
           })
     }
     
@@ -82,6 +83,7 @@ const MenCompo = () => {
 
                 <br></br>
                 <br></br>
+                <HomeFooter/>
 
     </Layout>
   )

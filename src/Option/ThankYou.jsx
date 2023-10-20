@@ -2,6 +2,7 @@ import React from 'react'
 import './Thankyou.css'
 import Layout from '../components/layout/Layout'
 import { Link } from 'react-router-dom'
+import HomeFooter from '../components/footer/Footer'
 
 const ThankYou = () => {
   return (
@@ -13,6 +14,8 @@ const ThankYou = () => {
       </Link>
 
       </div>
+      <br></br>
+      <HomeFooter/>
     </Layout>
   )
 }

@@ -35,7 +35,7 @@ const Curosal = () => {
 
 
     useEffect(() => {
-        axios('http://localhost:3005/route/data')
+        axios('https://ecommercedataback.onrender.com/route/data')
         .then((res) =>setDemo(res.data))
         .catch((err) => console.log(err))
     })
@@ -86,27 +86,7 @@ const Curosal = () => {
         
       </span>
       </div> 
-          {/* <div className='cartBox'>
-       <Slider {...settings}>     
-      
-                {demo && demo.filter((item) => item.category === 'LatestDemo').map((cat) => {
-                    return (
-                        <div className='cartItem'>
-                            <img className='cartImageBed' src={cat.image} alt="Loading" />
-
-                            <div className='order'>
-                                <Link to={`/NextPage/${cat.title}`} state={cat}>
-                                <h2 className='headingTwo'>{cat.title}</h2>
-                                </Link>
-                                <h3 className='price'>₹ {cat.price}</h3>
-                            </div>
-                                <button onClick={() => addCart(cat)} className='addtocartBed'>Add to Cart</button>
-                        </div>
-                    )
-                })}
-
-            </Slider>   
-            </div> */}
+       
             
       <div className="flex flex-wrap -m-4">
                     { product && product.map((item) => {

@@ -7,6 +7,7 @@ import { addToCart } from '../redux/CartSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
 import { Store } from '../context/data/MyContext'
+import HomeFooter from '../components/footer/Footer'
 
 
 const WomenCompo = () => {
@@ -16,7 +17,7 @@ const WomenCompo = () => {
     const context = useContext(Store)
     const { mode, product } = context;
 
- 
+    const dispatch = useDispatch()
     const cartItems = useSelector((state) => state.cart)
 
     useEffect(() => {
@@ -80,6 +81,7 @@ const WomenCompo = () => {
                 </div>
                 <br></br>
                 <br></br>
+                <HomeFooter/>
 
     </Layout>
   )

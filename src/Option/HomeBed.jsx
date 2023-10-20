@@ -8,6 +8,7 @@ import { toast } from 'react-toastify'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { Store } from '../context/data/MyContext'
+import HomeFooter from '../components/footer/Footer'
 
 const HomeBed = () => {
     const[data, setData] = useState([])
@@ -73,6 +74,7 @@ const HomeBed = () => {
                 </div>
                 <br></br>
                 <br></br>
+                <HomeFooter/>
 
     </Layout>
   )

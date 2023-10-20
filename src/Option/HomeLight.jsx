@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from '../redux/CartSlice'
 import { toast } from 'react-toastify'
 import { Store } from '../context/data/MyContext'
+import HomeFooter from '../components/footer/Footer'
 
 const HomeLight = () => {
     const[light, setLight] = useState([])
@@ -81,6 +82,7 @@ const HomeLight = () => {
 
                 <br></br>
                 <br></br>
+                <HomeFooter/>
 
     </Layout>
   )

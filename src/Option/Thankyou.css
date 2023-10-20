@@ -25,3 +25,18 @@
     align-items: center;
     flex-direction: column;
 }
+
+@media screen and (min-width:300px) and (max-width:760px){
+    .thankyouheadkeep{
+        width: 67vw;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        font-size: 30px;
+        color:white;
+        background-color: blue;
+        /* font-weight: bold; */
+        border-radius: 5px;
+        text-align: center;
+    }
+}

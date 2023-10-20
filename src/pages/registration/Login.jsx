@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import image from './images/loginLL.jpg'
+import Layout from "../../components/layout/Layout";
 
 
 const Login = () => {
@@ -21,7 +23,7 @@ const Login = () => {
   };
 
   const loginUser = async (userData) => {
-    const api = "http://localhost:3005/route/login";
+    const api = "https://ecommercedataback.onrender.com/route/login";
     const response = await axios.post(api, userData);
     setResponseData(response.data);
 
@@ -53,13 +55,22 @@ const Login = () => {
   };
 
   return (
-    <>
-      <div>
+    <div>
+  
+
+
         <div className="loginMain" >
-            <h2  className='labeltext'>Login</h2>
+      <div>
+        <img className="loginimage" src={image} alt="loading" />
+      </div>
+
+      <div className="loginform">
+
+
+            <h2 className='labeltext'>Good to see you again 😊</h2>
        
-            <div >
-              <span  className='labeltext'>Email: </span>
+            <div className="inputBox">
+              <span className="tab"  >Email: </span>
               <input
                 type="text"
                 name="user-name"
@@ -70,7 +81,7 @@ const Login = () => {
               <i></i>
             </div>
             <div className="inputBox">
-              <span  className='labeltext'>Password: </span>
+              <span className="tab" >Password: </span>
               <input
                 type="password"
                 name="user-password"
@@ -80,18 +91,29 @@ const Login = () => {
               />
               <i></i>
             </div>
-            <div >
+
+            <div className="buttonflex">
+
+              <Link  className="loginregister" to="/register"  >
+            <button >
               {/* <Link to="/forget">Forget Password</Link> */}
-              <Link to="/register"  className='labeltext'>Register</Link>
-            </div>
-            <button  className='labeltext' type="submit" value="login" onClick={submitHandler}>
-              Login
+                Don't have an account
             </button>
+                </Link>
+
+            <button type="submit" value="login" onClick={submitHandler}>
+            <Link className="loginregist" to={'/'}>
+
+              Login
+            </Link>
+            </button>
+            </div>
+            </div>
      
         </div>
-      </div>
    
-    </>
+   
+    </div>
   );
 };
 

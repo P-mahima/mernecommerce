@@ -1,26 +1,179 @@
 .mainform{
     /* width: 100%; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
     left: 50%;
     gap: 20px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 60px;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 
 }
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-  height: 25px;
+  height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .labeltext{
     font-size: 30px;
+}
+.imagesignin{
+  width: 50vw;
+  height: 50vh;
+}
+.loginformsignup{
+  width: 50vw;
+  height: 60vh;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* padding: 5px; */
+  box-shadow: 2px 2px 2px rgb(5, 5, 88);
+}
+.inputBox{
+  display: flex;
+  flex-direction: column;
+}
+.tab{
+  font-size: 30px;
+}
+.labeltextsignup{
+  font-weight: bold;
+  font-size: 40px;
+  /* border-bottom: 5px solid red; */
+  color: rgb(5,5,88);
+  width: 7vw
+}
+.signupregister{
+  background-color: rgb(84, 220, 209);
+  /* width: 50vw; */
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  /* text-align: left; */
+}
+.signupregist{
+  background-color: rgb(84, 220, 209);
+  /* width: 50px; */
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+.flexdisplay{
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (min-width:300px) and (max-width:760px){
+  .mainform{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .imagesignin{
+    width: 90vw;
+    height: 30vh;
+  }
+  .loginformsignup{
+    width: 80vw;
+    height: 65vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* padding: 5px; */
+    box-shadow: 2px 2px 2px rgb(5, 5, 88);
+  }
+  input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 250px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signupregister{
+  background-color: rgb(84, 220, 209);
+  /* width: 50vw; */
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  /* text-align: left; */
+}
+.signupregist{
+  background-color: rgb(84, 220, 209);
+  /* width: 50px; */
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+.flexdisplay{
+  padding-top: 20px;
+}
+
+}
+
+@media screen and (min-width:760px) and (max-width:1100px){
+  .mainform{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .imagesignin{
+    width: 90vw;
+    height: 30vh;
+  }
+  .loginformsignup{
+    width: 80vw;
+    height: 50vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* padding: 5px; */
+    box-shadow: 2px 2px 2px rgb(5, 5, 88);
+  }
+  input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 400px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signupregister{
+  background-color: rgb(84, 220, 209);
+  /* width: 50vw; */
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  /* text-align: left; */
+}
+.signupregist{
+  background-color: rgb(84, 220, 209);
+  /* width: 50px; */
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+.flexdisplay{
+  padding-top: 20px;
+}
 }

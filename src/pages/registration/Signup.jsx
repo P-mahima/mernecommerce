@@ -3,6 +3,8 @@ import './Signup.css'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
+import imagesignup from './images/images.png'
+// import { toast } from 'react-toastify';
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -27,7 +29,7 @@ const Signup = () => {
   };
 
   const RegisteringUser = async (clientData) => {
-    const url = "http://localhost:3005/route/register";
+    const url = "https://ecommercedataback.onrender.com/route/register";
     const response = await axios.post(url, clientData);
     setresponseData(response.data);
 
@@ -43,6 +45,7 @@ const Signup = () => {
 
       navi("/");
       console.log(responseData);
+      // toast.success('register successfully')
     } else {
       window.alert("alrady registed")
       navi("/login");
@@ -64,13 +67,16 @@ const Signup = () => {
     <>
       <div className='mainfrommain' >
         <div className='mainform'>
+          <div>
+            <img className='imagesignin' src={imagesignup} alt="" />
+          </div>
           
-         
-            <h2 className='labeltext'>Register</h2>
+         <div className='loginformsignup'>  
 
+            <h2 className='labeltextsignup' >Register</h2>
 
-            <div>
-              <label className='labeltext'>Name: </label>
+            <div  className="inputBox">
+              <label className="tab">Name: </label>
               
               <input
                 type="text"
@@ -85,9 +91,9 @@ const Signup = () => {
             </div>
 
 
-            <div>
+            <div  className="inputBox">
 
-              <label className='labeltext'>Email: </label>
+              <label className="tab" >Email: </label>
               <input
                 type="email"
                 name="email"
@@ -100,8 +106,8 @@ const Signup = () => {
               <i></i>
             </div>
 
-            <div >
-              <label className='labeltext'>Password: </label>
+            <div  className="inputBox" >
+              <label  className="tab">Password: </label>
 
               <input
                 type="password"
@@ -116,8 +122,25 @@ const Signup = () => {
 
             </div>
 
-            <button type="submit" value="submit" onClick={handleSubmit} className='labeltext'>Register</button>
-            <Link to="/login" className='labeltext'>Already have Account</Link>
+          <div className='flexdisplay'>
+
+         
+            <button type="submit" value="submit" onClick={handleSubmit} >
+            <Link   className="signupregist">
+              Register
+            </Link>
+              </button>
+            
+
+
+            <button>
+            <Link  className="signupregister"  to="/login" >
+            Already have Account
+
+            </Link>
+            </button>
+            </div>
+        </div>
         </div>
       </div>
       {/* <Footer /> */}

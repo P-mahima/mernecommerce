@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import { Store } from '../../context/data/MyContext';
 import { deleteFromCart } from '../../redux/CartSlice';
 import { Link } from 'react-router-dom';
+import HomeFooter from '../../components/footer/Footer';
 
 
 
@@ -38,7 +39,7 @@ function Cart() {
   // add to cart
   const deleteCart = (item) => {
     dispatch(deleteFromCart(item))
-    toast.success('delete g cart');
+    toast.success('item deleted');
   }
 
 
@@ -109,12 +110,16 @@ function Cart() {
             </div>
 
             <Link to={'/thankyoushopping'}>
-                <button onClick={handleOrder}>Buy Now</button>
+                <button className='buynow' type='button' onClick={handleOrder}>
+                  Buy Now
+                  </button>
             </Link>
           
 
           </div>
         </div>
+      <br></br>
+      <HomeFooter/>
       </div>
     </Layout>
   )

@@ -6,6 +6,7 @@ import ProductCard from '../../components/productCard/ProductCard'
 import Testimonial from '../../components/testimonial/Testimonial'
 // import Track from '../../components/track/Track'
 import Curosal from '../../components/curosal/Curosal'
+import HomeFooter from '../../components/footer/Footer'
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
 
       <br></br>
       <Testimonial />
+      <HomeFooter/>
     </Layout>
   )
 }

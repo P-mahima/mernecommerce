@@ -168,12 +168,15 @@
     transition: all 0.5s ease;
   }
   .searchbar{
-    padding: 10px;
-    width: 100vw;
+    padding: 0px;
+    width: 90vw;
   }
   .navbarTop{
     display: flex;
     flex-direction: column;
+    /* padding: 0px; */
+    gap: 0px;
+
 
     /* justify-content: space-between; */
   }
@@ -215,6 +218,7 @@
   }
   .navbar{
     height: 60px;
+    /* width:70px */
   }
   .buttonlogo{
     font-size: 10px;

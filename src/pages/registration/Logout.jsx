@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Logout = () => {
 
   const handleClick = () => {
     localStorage.clear()
-    window.alert("logout successfully")
+    toast.success("logout successfully")
   };
 
   const RenderButton = () => {
