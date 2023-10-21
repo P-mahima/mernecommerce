@@ -137,8 +137,8 @@ input[type="email"] {
     height: 50vh;
   }
   .loginformsignup{
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 50vh;
     /* text-align: center; */
     display: flex;
     flex-direction: column;
