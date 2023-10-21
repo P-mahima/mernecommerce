@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './HomeBed.css'
+import './Combine.css'
 import Layout from '../components/layout/Layout'
 import { addToCart } from '../redux/CartSlice'
 import { toast } from 'react-toastify'
@@ -49,16 +49,16 @@ const HomeBed = () => {
           <div className='cartBox'>
                 {data.filter((item) => item.category === 'HomeBed').map((cat) => {
                     return (
-                        <div className='cartItem'>
-                            <img className='cartImageBed' src={cat.image} alt="Loading" />
+                        <div className='cartItemWomen'>
+                            <img className='cartImageItem' src={cat.image} alt="Loading" />
 
                             <div className='order'>
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
-                                <h2 className='headingTwo'>{cat.title}</h2>
+                                <h2 className='headingTwoWomen'>{cat.title}</h2>
                                 </Link>
                                 <h3 className='price'>₹ {cat.price}</h3>
                             </div>
-                                <button onClick={() => addCart(cat)} className='addtocartBed'>Add to Cart</button>
+                                <button onClick={() => addCart(cat)} className='addtocartitem'>Add to Cart</button>
                         </div>
                     )
                 })}

@@ -5,7 +5,7 @@
 }
 .titlecursole{
     width: 90%;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
 }
@@ -23,20 +23,23 @@
     width: 97%;
     /* margin-left: 0px; */
     /* display: flex; */
+    /* font-size: 15px; */
     padding-left: 70px;
 }
 .pricecursole{
     width: 70%;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     color: red;
 }
 .headingnewly{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     /* padding-left: 20px; */
-    /* border-bottom: 5px solid red ; */
+    border-bottom: 3px solid red ;
+    margin-bottom: 10px;
+    width: 15vw;
 }
 
 

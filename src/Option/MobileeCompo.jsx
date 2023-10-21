@@ -68,7 +68,7 @@ const MobileeCompo = () => {
           <div className='cartBox'>
                 {mobile && mobile.filter((item) => item.category === 'Mobile').map((cat, index) => {
                     return (
-                        <div className='cartItem' key={index}>
+                        <div className='cartItemmobile' key={index}>
                             <img className='cartImage' src={cat.image} alt="Loading" />
 
                             <div className='order'>

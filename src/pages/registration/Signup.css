@@ -35,7 +35,7 @@ input[type="email"] {
   height: 60vh;
   /* text-align: center; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 30px;
   /* padding: 5px; */
   box-shadow: 2px 2px 2px rgb(5, 5, 88);
@@ -129,16 +129,16 @@ input[type="email"] {
 @media screen and (min-width:760px) and (max-width:1100px){
   .mainform{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 10px;
   }
   .imagesignin{
-    width: 90vw;
-    height: 30vh;
+    width: 70vw;
+    height: 50vh;
   }
   .loginformsignup{
     width: 80vw;
-    height: 50vh;
+    height: 80vh;
     /* text-align: center; */
     display: flex;
     flex-direction: column;
@@ -151,8 +151,8 @@ input[type="email"] {
   input[type="text"],
 input[type="password"],
 input[type="email"] {
-  width: 400px;
-  height: 50px;
+  width: 300px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -160,7 +160,7 @@ input[type="email"] {
 .signupregister{
   background-color: rgb(84, 220, 209);
   /* width: 50vw; */
-  font-size: 25px;
+  font-size: 20px;
   padding: 15px;
   border-radius: 10px;
   /* text-align: left; */
@@ -168,8 +168,8 @@ input[type="email"] {
 .signupregist{
   background-color: rgb(84, 220, 209);
   /* width: 50px; */
-  font-size: 25px;
-  padding: 15px;
+  font-size: 20px;
+  padding: 10px;
   border-radius: 10px;
 
 }

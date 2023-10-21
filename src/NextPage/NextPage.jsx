@@ -8,6 +8,7 @@ import Layout from '../components/layout/Layout';
 import { addToCart } from '../redux/CartSlice';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
+import HomeFooter from '../components/footer/Footer';
 
 
 function NextPage() {
@@ -59,6 +60,8 @@ function NextPage() {
                 {/* <img src='https://thumbs.dreamstime.com/z/delivery-service-concept-poster-cartoon-style-relocation-service-company-deliver-boxes-truck-95050722.jpg' className='imgoffer' alt='loading'/> */}
                 </div>
             </div>
+            <br></br>
+            <HomeFooter/>
         </Layout>
     )
 

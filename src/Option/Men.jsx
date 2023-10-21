@@ -55,7 +55,7 @@ const MenCompo = () => {
           <div className='cartBox'>
                 {men && men.filter((item) => item.category === 'MenFashion').map((cat) => {
                     return (
-                        <div className='cartItem'>
+                        <div className='cartItemmobile'>
                             <img className='cartImage' src={cat.image} alt="Loading" />
 
                             <div className='order'>

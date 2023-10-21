@@ -1,8 +1,9 @@
 import axios from 'axios'
 import React, {  useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './ProductCard.css'
-// import '.././'
+// import './ProductCard.css'
+import './CardProduct.css'
+// import '../../Option/Combine.css'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from '../../redux/CartSlice'
@@ -54,20 +55,21 @@ const MobileeCompo = () => {
   return (
     <div>
                 <h1 className='heading'>LatestItem</h1>
-          <div className='cartBox'>
+          <div className='cartBoxProducts'>
                 {data && data.filter((item) => item.category === 'LatestItem').map((cat,index) => {
                     //  const { title, price, description, imageUrl } = cat;
                     return (
-                        <div className='cartItem' key={index}>
-                            <img className='cartImage' src={cat.image} alt="Loading" />
+                        <div className='cartItemProduct' key={index}>
+                            <img className='cartImageProduct' src={cat.image} alt="Loading" />
 
                             <div className='order'>
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
-                                <h2 className='headingTwo'   style={{ color: mode === 'dark' ? 'white' : '', }}>{cat.title}</h2>
+                                <h2 className='headingTwoProduct'   style={{ color: mode === 'dark' ? 'white' : '', }}>{cat.title}</h2>
                                 </Link>
-                                <h3 className='price'>₹ {cat.price}</h3>
+                                {/* <br></br> */}
+                                <h3 className='priceProduct'>₹ {cat.price}</h3>
                             </div>
-                            <button onClick={() => addcart(cat)} className='addto'>Add to Cart</button>
+                            <button onClick={() => addcart(cat)} className='addtoProduct'>Add to Cart</button>
                         </div>
                     )
                 })}

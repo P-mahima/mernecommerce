@@ -18,11 +18,11 @@ const Profile = () => {
   const RenderProfile = () => {
     if(show){
         return (
-          <div className="registerfirst"  >
+          <div className="registerdemo"  >
           
-             <div className="registerme" > Hi {name}</div>
+             <button className="registerme" > Hi {name}</button>
 
-              <div><NavLink to="/login" onClick={handleLogout}  className="registerlog" >Logout</NavLink>  </div>
+              <button><NavLink to="/login" onClick={handleLogout}  className="registerlog" >Logout</NavLink>  </button>
      
       
           </div>

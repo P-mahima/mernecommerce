@@ -53,15 +53,15 @@ const WomenCompo = () => {
   return (
     <Layout>
                 <h1 className='heading'>Women's Cart</h1>
-          <div className='cartBox'>
+          <div className='cartBoxWomen'>
                 {women && women.filter((item) => item.category === 'WomenFashion').map((cat) => {
                     return (
-                        <div className='cartItem'>
+                        <div className='cartItemWomen'>
                             <img className='cartImageItem' src={cat.image} alt="Loading" />
 
                             <div className='order'>
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
-                                <h2 className='headingTwo'>{cat.title}</h2>
+                                <h2 className='headingTwoWomen'>{cat.title}</h2>
                                 </Link>
                                 <h3 className='price'>₹ {cat.price}</h3>
                             </div>
