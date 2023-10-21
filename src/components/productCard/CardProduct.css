@@ -1,11 +1,11 @@
 .cartImageProduct {
-    width: 17%;
-    height: 35vh;
+    width: 55%;
+    height: 30vh;
 }
 
 .cartItemProduct {
-    width: 70%;
-    height: 90vh;
+    width: 20%;
+    height: 60vh;
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;

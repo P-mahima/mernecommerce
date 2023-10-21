@@ -31,12 +31,12 @@ input[type="email"] {
   height: 50vh;
 }
 .loginformsignup{
-  width: 50vw;
-  height: 60vh;
+  width: 60vw;
+  height: 80vh;
   /* text-align: center; */
   display: flex;
-  /* flex-direction: column; */
-  gap: 30px;
+  flex-direction: column;
+  gap: 20px;
   /* padding: 5px; */
   box-shadow: 2px 2px 2px rgb(5, 5, 88);
 }
