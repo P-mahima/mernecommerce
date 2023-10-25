@@ -10,11 +10,8 @@ import Profile from "../../pages/registration/Profile";
 
 
 function NavBar() {
+  
   const [click, setClick] = useState(false);
-
-
-
-
   const handleClick = () => setClick(!click);
 
 
