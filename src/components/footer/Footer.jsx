@@ -28,7 +28,7 @@ const HomeFooter = () => {
             <div className='navigate'>
                 <h1 className='servicee'>Services</h1>
                 <button className='serviceItem' onClick={()=> Nav('/mobile')}><h3>Mobile</h3></button>
-                <button className='serviceItem' onClick={()=> Nav('/tv')}><h3>TV</h3></button>
+                {/* <button className='serviceItem' onClick={()=> Nav('/tv')}><h3>TV</h3></button> */}
                 <button className='serviceItem' onClick={()=> Nav('/menfashion')}><h3>Men</h3></button>
                 <button className='serviceItem' onClick={()=> Nav('/womenfashion')}><h3>Women</h3></button>
                 {/* <button className='service' onClick={()=> Nav('/Food')}><h3>F</h3></button> */}
