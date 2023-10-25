@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './Online.css'
+import './Combine.css'
 import Layout from '../components/layout/Layout'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -68,16 +68,16 @@ const MobileeCompo = () => {
           <div className='cartBox'>
                 {mobile && mobile.filter((item) => item.category === 'Mobile').map((cat, index) => {
                     return (
-                        <div className='cartItemmobile' key={index}>
-                            <img className='cartImage' src={cat.image} alt="Loading" />
+                        <div className='cartItemWomen' key={index}>
+                            <img className='cartImageItem' src={cat.image} alt="Loading" />
 
                             <div className='order'>
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
-                                <h2 className='headingTwo'    style={{ color: mode === 'dark' ? 'white' : '', }}>{cat.title}</h2>
+                                <h2 className='headingTwoWomen'    style={{ color: mode === 'dark' ? 'white' : '', }}>{cat.title}</h2>
                                 </Link>
-                                <h3 className='price'>₹ {cat.price}</h3>
+                                <h3 className='priceWomen'>₹ {cat.price}</h3>
                             </div>
-                                <button onClick={() => addCart(cat)} className='addtocart'>Add to Cart</button>
+                                <button onClick={() => addCart(cat)} className='addtocartitem'>Add to Cart</button>
                         </div>
                     )
                 })}

@@ -58,12 +58,12 @@ const WomenCompo = () => {
                     return (
                         <div className='cartItemWomen'>
                             <img className='cartImageItem' src={cat.image} alt="Loading" />
-
+                             
                             <div className='order'>
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
-                                <h2 className='headingTwoWomen'>{cat.title}</h2>
+                                <div className='headingTwoWomen'>{cat.title}</div>
                                 </Link>
-                                <h3 className='price'>₹ {cat.price}</h3>
+                                <div className='priceWomen'>₹ {cat.price}</div>
                             </div>
                                 <button onClick={() => addCart(cat)} className='addtocartitem'>Add to Cart</button>
                         </div>
@@ -81,7 +81,7 @@ const WomenCompo = () => {
                 </div>
                 <br></br>
                 <br></br>
-                <HomeFooter/>
+                {/* <HomeFooter/> */}
 
     </Layout>
   )

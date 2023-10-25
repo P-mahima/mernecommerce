@@ -55,7 +55,7 @@ const HomeDecor = () => {
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
                                 <h2 className='headingTwoWomen'>{cat.title}</h2>
                                 </Link>
-                                <h3 className='price'>₹ {cat.price}</h3>
+                                <h3 className='priceWomen'>₹ {cat.price}</h3>
                             </div>
                                 <button  onClick={() => addCart(cat)} className='addtocartitem'>Add to Cart</button>
                         </div>
