@@ -85,6 +85,7 @@
 .cartImageItem{
     height: 25vh;
     width: 10vw;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 .headingTwoWomen{
@@ -95,8 +96,8 @@
     color: red;
 }
 .addtocartitem{
-    margin-top: 10px;
-    width: 20px;
+    margin-bottom: 10px;
+    width: 90px;
     font-size: 10px;
     background-color: blue;
     color: aliceblue;
@@ -107,8 +108,8 @@
     flex-direction: column;
  }   
  .cartItemWomen{
-    width: 45%;
-    height: 50vh;
+    width: 75%;
+    height: 45vh;
     text-align: justify;
     /* padding: 5px; */
     /* flex-direction: column; */
