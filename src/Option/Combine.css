@@ -72,7 +72,7 @@
 }
 .cartItemWomen{
     width: 20%;
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -84,9 +84,9 @@
 }
 .cartImageItem{
     height: 25vh;
-    width: 10vw;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    width: 7vw;
+    /* margin-top: 5px; */
+    /* margin-bottom: 10px; */
 }
 .headingTwoWomen{
     font-size: 10px;
@@ -96,7 +96,7 @@
     color: red;
 }
 .addtocartitem{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 90px;
     font-size: 10px;
     background-color: blue;
@@ -148,12 +148,12 @@
 
 @media screen and (min-width:760px) and (max-width:1100px){
     .cartImageItem{
-        width: 15vw;
+        width: 10vw;
         height: 20vh;
     }
     .cartItemWomen{
-        width: 30%;
-        height: 54vh;
+        width: 20%;
+        height: 45vh;
         text-align: justify;
    
         /* gap: 5px; */
