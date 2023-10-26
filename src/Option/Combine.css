@@ -70,6 +70,18 @@
     justify-content: center;
     gap: 20px;
 }
+/* #card{
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ 
+    border: 2px solid wheat;
+    box-shadow:2px 2px 2px gray; 
+} */
 .cartItemWomen{
     width: 20%;
     /* height: 60vh; */
@@ -80,13 +92,13 @@
     justify-content: center;
     /* gap: 30px; */
     border: 2px solid wheat;
-    box-shadow:2px 2px 2px gray;
+    box-shadow:2px 2px 2px gray; 
 }
 .cartImageItem{
-    height: 25vh;
-    width: 7vw;
-    /* margin-top: 5px; */
-    /* margin-bottom: 10px; */
+    height: 15vh;
+    width: 10vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .headingTwoWomen{
     font-size: 10px;
@@ -147,20 +159,24 @@
 
 
 @media screen and (min-width:760px) and (max-width:1100px){
-    .cartImageItem{
-        width: 10vw;
-        height: 20vh;
+    .cartWomenImage{
+        width: 15vw;
+        /* width: 13vw; */
+        height: 10vh;
+        /* height: 15vh; */
     }
-    .cartItemWomen{
+    .cartWomenItem{
         width: 20%;
-        height: 45vh;
+        /* width: 25%; */
+        height: 50vh;
+        /* height: 1vh; */
         text-align: justify;
    
         /* gap: 5px; */
         border: 2px solid wheat;
         box-shadow:2px 2px 2px gray;
     }
-    .headingTwoWomen{
+    .cartWomenheading{
         /* padding: 5px; */
         text-align: center;
     }
