@@ -13,3 +13,12 @@
     z-index: 1;
     background-size: cover;
 }
+@media screen and (min-width:300px) and (max-width:760px){
+    #heroImage img{
+        width: 70%;
+        height: 35vh;
+        /* padding: 0px; */
+        z-index: 1;
+        background-size: cover;
+    }
+}
