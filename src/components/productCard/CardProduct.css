@@ -50,9 +50,11 @@
 .addtoProduct {
     background-color: blue;
     color: white;
+    font-size: 15px;
     /* width: auto; */
     width: 13vw  !important;
     /* height: 2vh; */
+    height: 20px;
     /* margin-bottom: 10px !important; */
     /* padding: 10px; */
 }
