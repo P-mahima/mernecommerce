@@ -59,8 +59,8 @@ const MobileeCompo = () => {
                 {data && data.filter((item) => item.category === 'LatestItem').map((cat,index) => {
                     //  const { title, price, description, imageUrl } = cat;
                     return (
-                        <div className='cartItemProduct' key={index}>
-                            <img className='cartImageProduct' src={cat.image} alt="Loading" />
+                        <div className='cartItemProduct cartProduct' key={index}>
+                            <img className='cartImageProduct cartProductInag' src={cat.image} alt="Loading" />
 
                             <div className='order'>
                                 <Link to={`/NextPage/${cat.title}`} state={cat}>
@@ -69,7 +69,7 @@ const MobileeCompo = () => {
                                 {/* <br></br> */}
                                 <h3 className='priceProduct'>₹ {cat.price}</h3>
                             </div>
-                            <button onClick={() => addcart(cat)} className='addtoProduct'>Add to Cart</button>
+                            <button onClick={() => addcart(cat)} className='addtoProduct cartProductInagadd'>Add to Cart</button>
                         </div>
                     )
                 })}

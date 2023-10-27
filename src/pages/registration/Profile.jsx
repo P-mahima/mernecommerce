@@ -19,23 +19,52 @@ const Profile = () => {
     if(show){
         return (
           <div className="registerdemo"  >
-          
-             <button className="registerme" > Hi {name}</button>
 
-              <button><NavLink to="/login" onClick={handleLogout}  className="registerlog" >Logout</NavLink>  </button>
-     
-      
+
+            
+<div className="dropdown">
+              <label className="nav-logo ">
+                <img className="profilelogo" src= 'https://cdn-icons-png.flaticon.com/128/9131/9131529.png' alt=""></img>
+              </label>
+              <div className="dropdown-content">
+
+                <div>
+
+                 <button className="registerme" > Hi {name}</button>
+                </div>
+
+                <div>
+                <button><NavLink to="/login" onClick={handleLogout}  className="registerlog" >Logout</NavLink>  </button>
+                </div>
+
+              </div>
+            </div>
+        
           </div>
         )
       }
       else{
         return(
-          <div>
-            <ul className="registerfirst">
-            <li><NavLink to="/register" className="register" >Register</NavLink></li>
-            <li><NavLink to="/login" className="register">Login</NavLink></li>
-            </ul>
-          </div>
+
+          <div className="dropdown">
+              <label className="nav-logo ">
+                <img className="profilelogo" src= 'https://cdn-icons-png.flaticon.com/128/9131/9131529.png' alt=""></img>
+              </label>
+              <div className="dropdown-content">
+
+                <div>
+
+                <button><NavLink to="/register" className="register" >Register</NavLink></button>
+                </div>
+
+                <div>
+                <button><NavLink to="/login" className="register">Login</NavLink></button>
+                </div>
+
+              </div>
+            </div>
+     
+      
         )
       }
   
@@ -48,4 +77,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Profile; 

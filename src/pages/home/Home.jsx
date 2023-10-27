@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../../components/layout/Layout'
 import HeroSection from '../../components/herosection/HeroSection'
 // import Filter from '../../components/filter/Filter'

@@ -3,6 +3,7 @@ import NavBar from '../navbar/Navbar'
 import Footer from '../footer/Footer'
 
 const Layout = ({children}) => {
+  // console.log('layout')
   return (
     <div>
       <NavBar/>

@@ -36,6 +36,7 @@ import Private from './redux/Private';
 
 
 
+
 const App = () => {
 
 
@@ -54,6 +55,7 @@ const App = () => {
       <Route path='/homedecor' element={<HomeDecor/>} />  
       <Route path='/homesofa' element={<HomeSofa/>} />  
       <Route path='/homelight' element={<HomeLight/>} /> 
+
       
 
         

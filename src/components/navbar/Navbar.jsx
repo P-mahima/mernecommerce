@@ -29,7 +29,7 @@ function NavBar() {
 
 
 
-
+// console.log('navbar called')
 
   return (
     <div>
@@ -45,7 +45,7 @@ function NavBar() {
           <SearchForm />
         </div>
 
-        <div className="navCart">
+        <div className="navCartlogo">
 
           <Profile />
         </div>
