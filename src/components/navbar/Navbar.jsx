@@ -167,7 +167,7 @@ function NavBar() {
                   </NavLink>
                 </div>
 
-                <div className="nav-item">
+                {/* <div className="nav-item">
                   <NavLink
                     exact
                     to="/homesofa"
@@ -177,7 +177,7 @@ function NavBar() {
                   >
                     Home Sofa
                   </NavLink>
-                </div>
+                </div> */}
 
 
                 <div className="nav-item">
